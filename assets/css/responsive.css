@@ -1,0 +1,8 @@
+@media (max-width: 600px) {
+    h3{
+        font-size: 20px;
+    }
+    .column{
+        flex-basis: calc(100% / 1);
+    }
+}

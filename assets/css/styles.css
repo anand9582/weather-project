@@ -1,0 +1,218 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	overflow-x: hidden;
+	font-family: Poppins, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 600;
+	font-family: Roboto, sans-serif
+}
+
+button {
+	border: none;
+}
+
+.btn-info{
+	color: #fff;
+    background-color: #005d8b;
+	border-color: #005d8b;
+}
+
+.btn-outline-light:hover{
+	background-color: #43d0dd;
+	color: #fff;
+}
+
+.section_weather {
+	padding: 70px 0px;
+	background-image: url(../images/wheather_bg.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+}
+
+.search_loc {
+	position: relative;
+}
+
+.search_loc svg {
+	fill: #cfcfcf;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+}
+
+.bg-wheather {
+    background:#005d8b;
+    border-radius: 20px;
+}
+
+.search_loc .form-control {
+	padding: 20px 25px;
+	border-radius: 20px;
+}
+
+.search_loc svg {
+	fill: #cfcfcf;
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	transform: translateY(-50%);
+}
+
+
+.location {
+	border: none;
+	border-radius: 50px;
+	outline: none;
+	width: 100%;
+	margin: 0 0 15px 0;
+	padding: 20px;
+	transition: all 0.3s;
+}
+
+label{
+	display: block;
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+
+
+/* Switch button */
+.switchonoff {
+	position: relative;
+	width:100px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+.switchonoff-checkbox {
+	display: none;
+}
+
+.switchonoff-label {
+	display: block;
+	overflow: hidden;
+	cursor: pointer;
+	border: 2px solid #CCC;
+	border-radius: 20px;
+}
+
+.switchonoff-inner {
+	display: block;
+	width: 200%;
+	margin-left: -100%;
+	transition: margin 0.3s ease-in 0s;
+}
+
+.switchonoff-inner:before,
+.switchonoff-inner:after {
+	display: block;
+	float: left;
+	width: 50%;
+	height: 28px;
+	padding: 0;
+	line-height: 28px;
+	font-size: 21px;
+	color: white;
+	font-family: Trebuchet, Arial, sans-serif;
+	font-weight: bold;
+	box-sizing: border-box;
+}
+
+.switchonoff-inner:before {
+	content: "°C";
+	padding-left: 10px;
+	background-color: #43d0dd;
+    color: #ffffff;
+}
+
+.switchonoff-inner:after {
+    content: "°F";
+    padding-right: 10px;
+    background-color: #43d0dd;
+    color: #ffffff;
+    text-align: right;
+}
+
+.switchonoff-switch {
+	display: block;
+	width: 52px;
+	margin: 0px;
+	background: #074a56;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 48px;
+    border: 2px solid #5fadc9;
+	border-radius: 20px;
+	transition: all 0.3s ease-in 0s;
+}
+
+.switchonoff-checkbox:checked+.switchonoff-label .switchonoff-inner {
+	margin-left: 0;
+}
+
+.switchonoff-checkbox:checked+.switchonoff-label .switchonoff-switch {
+	right: 0px;
+}
+
+.temperature .celfen,
+.temperature i{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.section_days{
+	padding:100px  0px;
+    background: #005d8b;
+}
+
+.days_box{
+    padding: 20px;
+    border: 1px solid #D7D7D7;
+    border-radius: 15px;
+    background: #FFF;
+    text-align: center;
+
+}
+.days-box {
+	gap: 15px;
+}
+
+.column{
+	flex-basis: calc(100% / 5);
+}
+.days-temp{
+	font-size: 20px;
+    color: #64c9ef;
+    font-weight: 600;
+}
+
+.days-temp-red{
+	font-size: 20px;
+    color: #ec6e4c;
+    font-weight: 600;
+}
+.hr-line{
+	background: #ec6e4c;
+}
+.week_day{
+	font-weight: 600;
+    font-size: 20px;
+}
